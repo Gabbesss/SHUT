@@ -24,13 +24,14 @@ body {
   padding: 10px 20px;
   background-color: black;
   color: white;
-  font-size: 18px;
+  font-size: 22px; /* AUMENTADO */
   border: 2px solid white;
-  box-shadow: 0 0 0 1px black; /* pequena borda preta fora da branca */
+  box-shadow: 0 0 0 1px black;
   cursor: pointer;
   user-select: none;
   transition: transform 0.2s;
 }
+
 
 .botao:hover {
   transform: scale(1.05);
