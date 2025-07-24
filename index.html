@@ -7,21 +7,23 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="espaco-vazio"></div>
+  <div class="logo-container fade-in-logo">
+    <img src="0723-_1__1_.gif" alt="Logo" class="logo" />
+  </div>
 
-  <div class="menu" id="menu">
+  <div class="menu fade-in">
     <div class="botao">sobre</div>
     <div class="botao">fotos</div>
     <div class="botao">updates</div>
     <div class="botao">criadores</div>
   </div>
 
- <script>
-    // Ativa o fade-in após o carregamento
+  <script>
+    // Ativa o fade-in ao carregar
     window.addEventListener('load', () => {
       document.querySelector('.menu').classList.add('mostrar');
+      document.querySelector('.logo-container').classList.add('mostrar');
     });
   </script>
-
 </body>
 </html>
