@@ -4,24 +4,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SHUT</title>
- <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="logo-container fade-in-logo">
-    <img src="0723-_1__1_.gif" alt="Logo" class="logo" />
+  <div class="logo-container">
+    <img src="0723-11.gif" alt="Logo" class="logo" />
   </div>
 
-  <div class="menu fade-in">
+  <div class="menu">
     <div class="botao">sobre</div>
     <div class="botao">fotos</div>
-    <div class="botao">lore</div>
+    <div class="botao" id="loreButton">lore</div>
     <div class="botao">criadores</div>
+  </div>
+
+  <div class="lore-container" id="loreContainer">
+    <div class="close-button" id="closeLore">X</div>
+    <div class="lore-text">
+      “Nem todo silêncio é paz.”<br><br>
+      Em SHUT, você entra na mente de Charles Henrique Drummond, um garoto de 13 anos enfrentando uma profunda depressão causada pela negligência emocional dos amigos e o distanciamento afetivo da própria realidade.<br><br>
+      Quando o mundo ao redor se torna frio e cruel, Charles se refugia dentro de sua própria cabeça — um lugar onde tudo parece mais acolhedor... à primeira vista. Porém, quanto mais ele se afasta da vida real, mais esse mundo interno se contorce, revelando traumas, medos e distorções que ele tentou esquecer.<br><br>
+      SHUT é uma jornada emocional através da dor, da memória e da reconstrução. Acompanhe Charles enquanto ele confronta versões invertidas das pessoas que marcaram sua vida, revive momentos-chave e enfrenta o mais difícil dos desafios: aceitar suas próprias cicatrizes.<br><br>
+      SHUT não é um jogo sobre vencer monstros.<br>
+      É sobre entender por que eles existem.<br><br>
+      Silencie o mundo lá fora. Ouça o que está gritando dentro.
+    </div>
+    <img src="Captura de tela 2025-08-03 182518.png" alt="Lore Image" class="lore-image" />
   </div>
 
   <script>
     window.addEventListener('load', () => {
       document.querySelector('.menu').classList.add('mostrar');
       document.querySelector('.logo-container').classList.add('mostrar');
+    });
+
+    document.getElementById('loreButton').addEventListener('click', () => {
+      document.getElementById('loreContainer').style.display = 'flex';
+    });
+
+    document.getElementById('closeLore').addEventListener('click', () => {
+      document.getElementById('loreContainer').style.display = 'none';
     });
   </script>
 </body>
